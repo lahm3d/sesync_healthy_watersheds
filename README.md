@@ -28,5 +28,7 @@ Process:
 [CONTRIBUTING.md]: CONTRIBUTING.md
 
 ## Collaborators
-
+- Renee Thompson
+- Peter Claggett
+- Sarah McDonald
 - Labeeb Ahmed
