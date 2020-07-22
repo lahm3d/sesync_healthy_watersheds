@@ -28,7 +28,7 @@ Process:
 [CONTRIBUTING.md]: CONTRIBUTING.md
 
 ## Collaborators
-- Renee Thompson
-- Peter Claggett
-- Sarah McDonald
-- Labeeb Ahmed
+- Renee Thompson, USGS
+- Peter Claggett, USGS
+- Sarah McDonald, USGS
+- Labeeb Ahmed, Attain LLC
