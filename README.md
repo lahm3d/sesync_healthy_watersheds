@@ -22,8 +22,8 @@ Process:
  * Metrics vs MBSS categorical 
  * Visualize regression results 
  * Evaluate regression results and report pass/fail based on user  defined significance threshold 
- * If pass- commit changes to CHWA (aka NHD database), if fail- don’t commit changes to CHWA 
-
+ * If pass- commit changes to CHWA (aka NHD database), if fail- don’t commit changes to CHWA
+ * Add QAQC steps
 
 [CONTRIBUTING.md]: CONTRIBUTING.md
 
