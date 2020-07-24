@@ -115,6 +115,7 @@ Prepare to present on your mini-project!
 10. Perform linear regression and step-wise regression
 
 *Benthic IBI*:
+
                          Estimate Std. Error t value Pr(>|t|)    
           (Intercept)   2.415e+00  3.463e-01   6.975 4.28e-12 ***
           PctNatural   -1.605e+00  3.953e-01  -4.060 5.12e-05 ***
