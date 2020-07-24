@@ -4,6 +4,7 @@ library(raster)
 library(sf)
 library(foreign)
 library(data.table)
+library(MASS)
 
 # project directory
 
@@ -133,6 +134,21 @@ df %>%
   mutate(wgt_mdbibi = weighted.mean(MD_BIBI, ranks, na.rm = TRUE)) %>%
   # 9 remove duplicates
   distinct(COMID, .keep_all = TRUE) -> df
+
+
+#Prep for linear regresion on Benthic IBI
+benthic <- df[c(14:61,79:80,85)]
+fish <- df[c(14:61,79:80,84)]
+# Fit the full models
+benthic.model <- lm(wgt_mdbibi ~., data = benthic)
+fish.model <- lm(wgt_mdfibi ~., data = fish)
+# Stepwise regression models
+Bstep.model <- stepAIC(benthic.model, direction = "both",
+                       trace = FALSE)
+Fstep.model <- stepAIC(fish.model, direction = "both",
+                       trace = FALSE)
+summary(Bstep.model)
+summary(Fstep.model)
 
 ############VISUALIZATION
 
