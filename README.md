@@ -43,9 +43,40 @@ Quantitative indicators are important to _assess current watershed condition, tr
 assess the vulnerability_ of these state-identified watersheds to future degradation. 
 
 <img src="CHWA_HealthMetrics.png" width = "600" alt="Chesapeake Healthy Watersheds Assessment - Health Metrics">
-<img src="CHWA_VulerabilityMetrics.png" width = "600" alt="Chesapeake Healthy Watersheds Assessment - Health Metrics">
+<img src="CHWA_VulnerabilityMetrics.png" width = "600" alt="Chesapeake Healthy Watersheds Assessment - Vulnerability Metrics">
 
 https://www.chesapeakebay.net/channel_files/26540/chesapeake_healthy_watersheds_assessment_report.pdf
+
+## Process for 
+1. Spatially join the healthy watersheds metrics to the MBSS point data
+    chwa_mbss <- st_join(mbss, chwa)
+    
+2. Buffer the MBSS points by 100 meters
+    mbss_100 <- chwa_mbss %>%  st_buffer(100)
+    
+    (Insert buffer png)
+    
+ 3. Read in land cover raster containing forest and impervious classes
+    LC <- raster("LC_MD_5m.tif")
+
+4. Calculate Percent Forest and Percent Impervious cover within the 100m buffers
+    aggLC <- extract(LC, mbss_100)
+    pctForest <- rep(0, length(aggLC))
+    pctImp <- rep(0, length(aggLC))
+    for(row in 1:length(aggLC)){tb <- as.data.frame(table(aggLC[row]))
+      forest <- tb[tb == 1, 'Freq']
+      imp <- tb[tb == 2, 'Freq'] #(tb[tb == 5, 'Freq'] + tb[tb == 6, 'Freq'])
+      if (length(forest) != 0){
+        pctForest[row] <- forest / length(aggLC[[row]]) #percent forested}
+      if (length(imp) != 0){
+        pctImp[row] <- imp / length(aggLC[[row]])  # percent impervious } }
+
+ (insert red dot in forest png)
+ 
+ 5. Add newly calculated data to the joined data
+    chwa_mbss <- as.data.frame(chwa_mbss)
+    chwa_mbss['BUFPctFor'] <- pctForest
+    chwa_mbss['BUFPctImp'] <- pctImp
 
 Reproducible pipeline 
 
