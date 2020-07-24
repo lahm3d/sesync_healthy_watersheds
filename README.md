@@ -1,6 +1,6 @@
 # SESYNC HEALTHY WATERSHED PROJECT 
 
-##Goals:
+## Goals:
 * ### Improve git and R skills
 * ### Improve group collaboration skills
 * ### Develop reproducible workflows to add/update and evaluate variables to the Chesapeake Healthy Watershed Assessment (CHWA)
