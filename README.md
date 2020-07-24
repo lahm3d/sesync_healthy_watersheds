@@ -115,32 +115,33 @@ Prepare to present on your mini-project!
 10. Perform linear regression and step-wise regression
 
 *Benthic IBI*:
-                       Estimate Std. Error t value Pr(>|t|)    
-        (Intercept)   2.415e+00  3.463e-01   6.975 4.28e-12 ***
-        PctNatural   -1.605e+00  3.953e-01  -4.060 5.12e-05 ***
-        Mngd_TF_HCZ  -8.109e-01  2.116e-01  -3.833 0.000131 ***
-        PctForeWshed  2.436e+00  3.140e-01   7.758 1.43e-14 ***
-        PctImpWshed  -4.177e+00  6.678e-01  -6.255 4.94e-10 ***
-        HabConditi    1.188e-01  3.484e-02   3.409 0.000667 ***
-        SPARROWTN    -9.723e+01  2.135e+01  -4.555 5.59e-06 ***
-        SPARROWTP     6.522e+01  7.648e+00   8.528  < 2e-16 ***
-        CBP_Ag_N      6.705e+01  1.406e+01   4.770 1.99e-06 ***
-        BUFPctFor     5.819e-01  8.689e-02   6.697 2.83e-11 ***
+                         Estimate Std. Error t value Pr(>|t|)    
+          (Intercept)   2.415e+00  3.463e-01   6.975 4.28e-12 ***
+          PctNatural   -1.605e+00  3.953e-01  -4.060 5.12e-05 ***
+          Mngd_TF_HCZ  -8.109e-01  2.116e-01  -3.833 0.000131 ***
+          PctForeWshed  2.436e+00  3.140e-01   7.758 1.43e-14 ***
+          PctImpWshed  -4.177e+00  6.678e-01  -6.255 4.94e-10 ***
+          HabConditi    1.188e-01  3.484e-02   3.409 0.000667 ***
+          SPARROWTN    -9.723e+01  2.135e+01  -4.555 5.59e-06 ***
+          SPARROWTP     6.522e+01  7.648e+00   8.528  < 2e-16 ***
+          CBP_Ag_N      6.705e+01  1.406e+01   4.770 1.99e-06 ***
+          BUFPctFor     5.819e-01  8.689e-02   6.697 2.83e-11 ***
         
-        Multiple R-squared:  0.2943,    Adjusted R-squared:  0.2846 
+          Multiple R-squared:  0.2943,    Adjusted R-squared:  0.2846 
 
 *Fish IBI*:
-                       Estimate Std. Error t value Pr(>|t|)    
-        (Intercept)     3.92367    0.25772  15.225  < 2e-16 ***
-        PctNatural     -3.13719    0.48225  -6.505 1.01e-10 ***
-        PctForeWshed    1.46428    0.42876   3.415 0.000652 ***
-        PctImpWshed    -3.15918    0.68925  -4.584 4.90e-06 ***
-        RoadStream     -0.15386    0.04157  -3.701 0.000222 ***
-        CBP_Ag_P      202.00419   29.70632   6.800 1.43e-11 ***
-        CBP_WW_S     -140.51963   34.18429  -4.111 4.13e-05 ***
-        BUFPctFor       0.50275    0.11679   4.305 1.76e-05 ***
 
-        Multiple R-squared:  0.1129,    Adjusted R-squared:  0.1048
+                         Estimate Std. Error t value Pr(>|t|)    
+          (Intercept)     3.92367    0.25772  15.225  < 2e-16 ***
+          PctNatural     -3.13719    0.48225  -6.505 1.01e-10 ***
+          PctForeWshed    1.46428    0.42876   3.415 0.000652 ***
+          PctImpWshed    -3.15918    0.68925  -4.584 4.90e-06 ***
+          RoadStream     -0.15386    0.04157  -3.701 0.000222 ***
+          CBP_Ag_P      202.00419   29.70632   6.800 1.43e-11 ***
+          CBP_WW_S     -140.51963   34.18429  -4.111 4.13e-05 ***
+          BUFPctFor       0.50275    0.11679   4.305 1.76e-05 ***
+
+          Multiple R-squared:  0.1129,    Adjusted R-squared:  0.1048
 
 ### Lessons learned:
 * GITHUB, R, and SLACK work great for collaborative coding and managing coding projects
