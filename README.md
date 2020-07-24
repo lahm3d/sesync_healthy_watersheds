@@ -42,7 +42,7 @@ a goal of maintaining the long-term health of watersheds identified as healthy b
 Quantitative indicators are important to _assess current watershed condition, track future condition, and
 assess the vulnerability_ of these state-identified watersheds to future degradation. 
 
-<img src="CHWA_HealthMetrics.img/.png" width = "600" alt="Chesapeake Healthy Watersheds Assessment - Health Metrics">
+<img src="CHWA_HealthMetrics.png" width = "600" alt="Chesapeake Healthy Watersheds Assessment - Health Metrics">
 <img src="CHWA_VulerabilityMetrics.png" width = "600" alt="Chesapeake Healthy Watersheds Assessment - Health Metrics">
 
 https://www.chesapeakebay.net/channel_files/26540/chesapeake_healthy_watersheds_assessment_report.pdf
